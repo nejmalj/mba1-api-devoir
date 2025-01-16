@@ -9,7 +9,7 @@ exports.getMielById = (req, res) => {
 
 exports.createMiel = (req, res) => {
     const { nom, description, prix } = req.body;
-    res.status(201).json({ message: 'Miel créé', miel: { nom, description, prix } });
+    res.json({ message: 'Miel créé', miel: { nom, description, prix } });
 };
 
 exports.updateMiel = (req, res) => {
