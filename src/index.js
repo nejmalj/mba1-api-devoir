@@ -1,0 +1,11 @@
+const { Sequelize } = require('sequelize');
+
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+    dialect: 'postgres',
+});
+
+const Miel = require('./mielModel');
+const Tag = require('./tagModel');
+
+
+module.exports = { sequelize, Miel, Tag };
