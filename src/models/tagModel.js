@@ -1,6 +1,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../../config/db.js');
 
+
 const Tag = sequelize.define('Tag', {
     tag: {
         type: DataTypes.STRING,

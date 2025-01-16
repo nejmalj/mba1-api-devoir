@@ -21,3 +21,4 @@ exports.deleteMiel = (req, res) => {
     const { id } = req.params;
     res.json({ message: `Miel ${id} supprimé` });
 };
+
